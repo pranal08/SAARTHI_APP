@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.pranalspk.saarthi.ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/sosBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_red_dark"
+            android:layout_weight="1.0"
+            android:onClick="sosBtnClick"
+            android:text="EMERGENCY" />
+
+        <Button
+            android:id="@+id/docBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_green_light"
+            android:layout_weight="1.0"
+            android:onClick="docBtnClick"
+            android:text="DOCTOR" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/pharmaBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_blue_light"
+            android:layout_weight="1.0"
+            android:onClick="pharmaBtnClick"
+            android:text="PHARMACIST" />
+
+        <Button
+            android:id="@+id/pulseBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_weight="1.0"
+            android:onClick="pulseBtnClick"
+            android:text="PULSE MAINTAINER" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grey"
+        android:layout_weight="1.7"
+        android:onClick="logoutBtnClick"
+        android:text="LOG OUT" />
+
+</LinearLayout>
